@@ -1,14 +1,14 @@
 // Global variables for products and selected items
 const products = [
-    { id: 1, name: "🔥GPU CPU Combo - Sapphire Tech 11323-02-20G Bundle with AMD cpu🔥", price: 1078.99, image: "../Assets/images/img(1).jpg" },
-    { id: 2, name: "🔥AMD's Radeon RX 9070 XT Graphics Card GDDR7 16GB🔥", price: 687.99, image: "../Assets/images/img(2).jpg" },
-    { id: 3, name: "🔥ASUS TUF Gaming GeForce RTX 5090 32GB GDDR7 OC Edition TUF-RTX5090-O32G-GAMING PCI-Express 5.0 DLSS 4.0 Graphics Card🔥", price: 2569.99, image: "../Assets/images/img(3).jpg" },
-    { id: 4, name: "🔥GIGABYTE Gaming GeForce RTX 5090 32GB GDDR7 PCI Express 5.0 ATX Graphics Card GV-N5090GAMING OC-32GD🔥", price: 2875.99, image: "../Assets/images/img(4).jpg" },
-    { id: 5, name: "🔥Intel Core Ultra 9 285K - Core Ultra 9 (Series 2) Arrow Lake 24-Core (8P+16E), LGA 1851, 125W Desktop Processor🔥", price: 612.99, image: "../Assets/images/img(5).jpg" },
-    { id: 6, name: "🔥Intel Core Ultra 9 285 - Core Ultra 9 (Series 2) Arrow Lake 24-Core (8P+16E), LGA 1851, 65W Desktop Processor🔥", price: 598.99, image: "../Assets/images/img(6).jpg" },
-    { id: 7, name: "🔥CORSAIR Vengeance RGB 32GB (2 x 16GB) 288-Pin PC RAM DDR5 6000 (PC5 48000) Desktop Memory Model🔥", price: 329.99, image: "../Assets/images/img(7).jpg" },
-    { id: 8, name: "🔥AMD Ryzen 7 9800X3D - Ryzen 7 9000 Series Zen 5 8-Core 5.2 GHz - Socket AM5 120W - AMD Radeon Graphics Desktop Processor🔥", price: 574.99, image: "../Assets/images/img(8).jpg" },
-    { id: 9, name: "🔥AMD Ryzen 7 7800X3D - Ryzen 7 7000 Series Zen 4 8-Core 4.2 GHz - Socket AM5 120W - AMD Radeon Graphics Desktop Processor🔥", price: 468.99, image: "../Assets/images/img(9).jpg" },
+    { id: 1, name: "🔥GPU CPU Combo - Sapphire Tech 11323-02-20G Bundle with AMD cpu🔥", price: 1078.99, image: "img(1).jpg" },
+    { id: 2, name: "🔥AMD's Radeon RX 9070 XT Graphics Card GDDR7 16GB🔥", price: 687.99, image: "img(2).jpg" },
+    { id: 3, name: "🔥ASUS TUF Gaming GeForce RTX 5090 32GB GDDR7 OC Edition TUF-RTX5090-O32G-GAMING PCI-Express 5.0 DLSS 4.0 Graphics Card🔥", price: 2569.99, image: "img(3).jpg" },
+    { id: 4, name: "🔥GIGABYTE Gaming GeForce RTX 5090 32GB GDDR7 PCI Express 5.0 ATX Graphics Card GV-N5090GAMING OC-32GD🔥", price: 2875.99, image: "img(4).jpg" },
+    { id: 5, name: "🔥Intel Core Ultra 9 285K - Core Ultra 9 (Series 2) Arrow Lake 24-Core (8P+16E), LGA 1851, 125W Desktop Processor🔥", price: 612.99, image: "img(5).jpg" },
+    { id: 6, name: "🔥Intel Core Ultra 9 285 - Core Ultra 9 (Series 2) Arrow Lake 24-Core (8P+16E), LGA 1851, 65W Desktop Processor🔥", price: 598.99, image: "img(6).jpg" },
+    { id: 7, name: "🔥CORSAIR Vengeance RGB 32GB (2 x 16GB) 288-Pin PC RAM DDR5 6000 (PC5 48000) Desktop Memory Model🔥", price: 329.99, image: "(7).jpg" },
+    { id: 8, name: "🔥AMD Ryzen 7 9800X3D - Ryzen 7 9000 Series Zen 5 8-Core 5.2 GHz - Socket AM5 120W - AMD Radeon Graphics Desktop Processor🔥", price: 574.99, image: "img(8).jpg" },
+    { id: 9, name: "🔥AMD Ryzen 7 7800X3D - Ryzen 7 7000 Series Zen 4 8-Core 4.2 GHz - Socket AM5 120W - AMD Radeon Graphics Desktop Processor🔥", price: 468.99, image: "img(9).jpg" },
 ];
 
 let selectedProducts = [];
