@@ -1,7 +1,7 @@
 // Sample of user data to use for login
 const users = [
     { username: "LAlewis", password: "wffbsm1#" },
-    { username: "Aron Cockroach", password: "123crashoutking" },
+    { username: "Aron Cockroach", password: "123crard" },
     { username: "Rojah Davasca", password: "Roja123#" },
     { username: "Michael Jackson", password: "passw246" },
     { username: "Sirisha Chodavarapu", password: "passw123" },
