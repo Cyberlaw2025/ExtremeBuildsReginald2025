@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>ExtremeBuilds - Products</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="search-container">
+                <input type="text" placeholder="Search products..." />
+            </div>
+            <div class="logo-container">
+                <img src="C:\Users\NetAdmin\Desktop\1607537 Ecommerce Website\Assets\images\icon.png" alt="ExtremeBuilds Icon" />
+                <h1>ExtremeBuilds</h1>
+            </div>
+            <!-- Shopping Cart Icon -->
+            <button id="cartIcon" onclick="openCart()">🛒 Cart</button>
+        </div>
+    </header>
+
+    <div class="slides">
+        <h2>Welcome to ExtremeBuilds</h2>
+        <h1>Build your very own PC</h1>
+    </div>
+
+    <div class="container">
+        <h2>Our PC Products</h2>
+        <div id="productList"></div>
+        <div class="button-container">
+            <button id="Checkout" onclick="Checkout()">Checkout</button>
+            <button onclick="Logout()">Logout</button>
+        </div>
+    </div>
+
+    <!-- Modal for displaying selected products -->
+    <div id="cartModal">
+        <div>
+            <h1>Your Shopping Cart</h1>
+            <div id="cartItems"></div>
+            <button onclick="closeCart()">Close</button>
+        </div>
+    </div>
+
+    <script src="products.js"></script>
+
+    <footer>
+        <p>&copy; 2025 ExtremeBuilds. All rights reserved.</p>
+        <p><a href="">Privacy Policy</a> | <a href="">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
+  
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,440 @@
+/* General Styles */
+@font-face {
+    font-family: 'Bahnschrift SemiBold';
+    src: url('path/to/Bahnschrift SemiBold.ttf') format('truetype'); /* Adjust the path to your font file */
+}
+
+body {
+    font-family: 'Bahnschrift SemiBold', sans-serif; /* Fallback to sans-serif */
+    background: linear-gradient(to right, #1c05ee, #f308f3ad);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.container {
+    width: 90%; /* container width*/
+    max-width: 1600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(37, 37, 37);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Adds space above the buttons */
+}
+
+button {
+    width: 20%; /* button width*/
+    padding: 15px;
+    margin: 10px; /* Change margin to be uniform around buttons */
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #7111cb, #2575fc);
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #f80bd9;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+
+h2 {
+    text-align: center;
+    color: #faf8fa;
+    margin-bottom: 30px;
+    font-size: 4em;
+}
+
+
+
+
+/* Glowing Effect on Hover */
+h1:hover {
+    text-shadow: 0 0 5px #d10bf8, 0 0 10px #f80bd9, 0 0 15px #f80bd9, 0 0 20px #ff00ff; /* hover color */
+}
+
+/* Product List Styles */
+#productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* product list cards */
+    gap: 30px;
+}
+
+.product {
+    background: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    text-align: center;
+    position: relative; /* For positioning the image */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #6a11cb;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.product h3 {
+    margin: 10px 0;
+    color: #2575fc;
+}
+
+.product p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Product Hover Effect */
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(183, 19, 248, 0.8), 
+                0 0 30px rgba(183, 50, 245, 0.705), 
+                0 0 40px rgba(174, 0, 255, 0.918);
+}
+
+.product:hover img {
+    transform: scale(1.1); /* Scale image on hover */
+}
+
+button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+    box-shadow: 
+        0 0 5px rgba(255, 0, 179, 0.836), 
+        0 0 10px rgba(153, 0, 255, 0.911), 
+        0 0 15px rgba(253, 4, 149, 0.11), 
+        0 0 20px rgb(154, 2, 241), 
+        0 0 25px rgba(0, 0, 255, 0.8), 
+        0 0 30px rgba(253, 9, 241, 0.6);
+}
+
+header {
+    background-color: #1b1b1b; /* Dark background for the header */
+    color: white;           /* White text color */
+    padding: 10px 10px;    /* Padding around the header */
+    text-align: center;     /* Center the text */
+}
+
+
+
+.header-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between search, logo, and cart */
+    max-width: 1200px; /* Optional: Set a max width for the header */
+    margin: 0 auto; /* Center the header container */
+    padding: 0 20px; /* Optional: Add horizontal padding */
+}
+
+h1 {
+    margin: 0;
+    margin-left: 10px; /* Space between search bar and title */
+}
+
+
+
+nav ul {
+    list-style-type: none;  /* Remove bullet points */
+    padding: 0;             /* Remove default padding */
+}
+
+nav ul li {
+    display: inline;        /* Display list items in a line */
+    margin: 0 15px;        /* Space between menu items */
+}
+
+nav ul li a {
+    color: white;          /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #161515; /* Light background color */
+    border-top: 1px solid #1a1919; /* Top border */
+    margin-top: 20px; /* Space above the footer */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+footer a {
+    color: #6a11cb; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Adds some basic styles for the icons */
+.social-icons {
+    margin-top: 10px;
+}
+        
+.social-icons a {
+    text-decoration: none;
+    color: #f107de; /* Changes to desired color */
+    margin: 0 10px;
+    font-size: 24px; /* Adjusts size as needed */
+    transition: transform 0.3s, color 0.3s, box-shadow 0.3s; /* Animation effect */
+}
+        
+.social-icons a:hover {
+    transform: scale(1.2) rotate(15deg); /* Scale and rotate effect on hover */
+    color: #f807f8; /* Change color on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+
+
+.search-container {
+    flex: 1; /* Allow the search bar to take available space */
+    display: flex;
+    justify-content: flex-start; /* Align search bar to the left */
+    position: relative; /* Position relative for the icon */
+}
+  
+.search-container input[type="text"] 
+{
+    padding: 10px 40px 10px 20px; /* Add padding for the icon */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded corners */
+    margin-right: 5px; /* Space between input and button */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+  
+.search-container input[type="text"]:focus {
+    border-color: #f107de; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+  
+.search-container .search-icon {
+    position: absolute;
+    left: 15px; /* Position the icon inside the input */
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    color: #ccc; /* Icon color */
+    transition: color 0.3s; /* Smooth transition for icon color */
+}
+  
+.search-container input[type="text"]:focus + .search-icon {
+    color: #f107de; /* Change icon color on input focus */
+}
+  
+.search-container button {
+    padding: 8px 8px; /* Adjust padding for button */
+    font-size: 13px;
+    background-color: #f107de; /* Change to your desired button color */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+  
+.search-container button:hover {
+    background-color: #d005b5; /* Darker shade on hover */
+}
+
+/* Basic styles for the header */
+.header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.header img {
+    width: 20px; /* Set the width of the icon to a smaller size */
+    height: 20px; /* Set a specific height to maintain aspect ratio */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+
+/* slide*/
+
+.slides {
+    background: #333 url('https://preview.redd.it/pc-gaming-setup-20-yo-v0-8f1c0cqhjiec1.jpg?width=4032&format=pjpg&auto=webp&s=e256725e15e94384a71d7c611b00f7d3cafd60ca') no-repeat center center/cover; /* Fallback color */
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+
+.slides::before {
+    content: ""; /* Empty content for the overlay */
+    position: static; /* Position absolute to cover the entire div */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure the overlay is above the background but below the text */
+}
+
+.slides h2 {
+    position: relative; /* Position relative to be above the overlay */
+    z-index: 2; /* Ensure the text is above the overlay */
+}
+
+
+
+
+/* Basic styles for the modal */
+#cartModal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure modal is on top */
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 0.3s ease; /* Transition effect for opacity */
+}
+
+/* Class to show the modal */
+#cartModal.show {
+    display: block; /* Show the modal */
+    opacity: 1; /* Fully visible */
+}
+
+/* Inner container for the modal */
+#cartModal > div {
+    background-color: white;
+    margin: auto; /* Center the modal horizontally */
+    padding: 20px;
+    width: 90%; /* Set width to a percentage for responsiveness */
+    max-width: 800px; /* Limit max width */
+    max-height: 80%; /* Set a maximum height for the modal */
+    border-radius: 8px; /* Rounded corners */
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: absolute; /* Position absolute for centering */
+    top: 50%; /* Move down 50% */
+    left: 50%; /* Move right 50% */
+    transform: translate(-50%, -50%); /* Adjust to center both vertically and horizontally */
+}
+
+/* Style for the cart icon */
+#cartIcon {
+    position: absolute;
+    top: 0px; /* Set a fixed top position */
+    right: 0px; /* Set a fixed right position */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Position Extremebuilds logo correctly on header */
+.logo-container {
+    display: flex;
+    align-items: center; /* Center logo and title vertically */
+    justify-content: center; /* Center logo and title horizontally */
+}
+
+.logo-container img {
+    height: 50px; /* Set a height for the logo */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.search-container {
+    flex: 1; /* Allow the search container to take available space */
+}
+
+#cartIcon {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    font-size: 24px; /* Increase font size for the cart icon */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+
+
+#cartIcon {
+    background: linear-gradient(to right, #7111cb, #2575fc);
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+    display: flex; /* Flexbox for centering icon and text */
+    align-items: center; /* Center items vertically */
+    width: 100px; /* Fixed width for the button */
+}
+
+#cartIcon:hover {
+    background-color: #ee05bc; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+#cartIcon:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}

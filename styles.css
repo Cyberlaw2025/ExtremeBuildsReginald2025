@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Bahnschrift SemiBold', sans-serif; /* Fallback to sans-serif */
+    background: linear-gradient(to right, #1c05ee, #f308f3ad);
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    display: flex;
+    flex-direction: column; /* Allows footer to be at the bottom */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative; /* Makes the container a positioning context */
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #f80bd9;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    transition: text-shadow 0.3s ease; /* allows smooth transition for the glow effect */
+}
+
+/* Glowing Effect on Hover */
+h1:hover {
+    text-shadow: 0 0 5px #f80bd9, 0 0 10px #f80bd9, 0 0 15px #f80bd9, 0 0 20px #ff00ff; /* Adjusts colors and sizes as needed */
+}
+
+/* Input Styles */
+input[type="text"], input[type="password"] {
+    width: 94%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #6a11cb;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    width: 20%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    margin-top: 20px; /*Add some space above the buttons */
+}
+
+button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+}
+
+/* Error Message Styles */
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #161515; /* dark background color */
+    border-top: 1px solid #1a1919; /* Top border */
+    margin-top: 20px; /* Space above the footer */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 5px 0; /* Puts space between paragraphs */
+}
+
+footer a {
+    color: #6a11cb; /* Links color */
+    text-decoration: none; /* Removes underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Adds some basic styles for the icons */
+.social-icons {
+    margin-top: 10px;
+}
+        
+.social-icons a {
+    text-decoration: none;
+    color: #f107de; /* Changes to desired color */
+    margin: 0 10px;
+    font-size: 24px; /* Adjusts size as needed */
+    transition: transform 0.3s, color 0.3s, box-shadow 0.3s; /* Animation effect */
+}
+        
+.social-icons a:hover {
+    transform: scale(1.2) rotate(15deg); /* Scale and rotate effect on hover */
+    color: #f807f8; /* Change color on hover */
+    box-shadow: 0 4px 15px rgba(45, 1, 63, 0.3); /* Adds shadow on hover */
+}
+
+
+
+/* Basic styles for the header */
+.header {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        margin-bottom: 20px; /* add a space below the header */
+    }
+
+    .header img {
+        width: 40px; /* Set the width of the icon */
+        height: auto; /* Maintains aspect ratio of image*/
+        margin-right: 10px; /* Space between icon and text */
+    }
+
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}

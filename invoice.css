@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: 'Bahnschrift SemiBold', sans-serif; /* Fallback to sans-serif */
+    background: linear-gradient(to right, #1c05ee, #f308f3ad);
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    display: flex;
+    flex-direction: column; /* Allows footer to be at the bottom */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    flex: 1; /* Allow the container to grow and fill available space */
+    max-height: 80vh; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Invoice Details Styles */
+#invoiceDetails {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #b713f8;
+    margin-bottom: 20px;
+    transition: text-shadow 0.3s ease; /* Smooth transition for text-shadow */
+}
+
+h2:hover {
+    text-shadow: 0 0 20px rgba(183, 19, 248, 0.8), 0 0 30px rgba(183, 19, 248, 0.6); /* Glowing effect */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    background: rgba(106, 17, 203, 0.1);
+    box-shadow: 0 0 20px rgba(106, 17, 203, 0.8); /* Glowing effect */
+}
+
+/* Total Styles */
+p {
+    font-size: 1.2em;
+    text-align: right;
+}
+
+strong {
+    color: #2575fc;
+}
+
+/* Button Styles */
+button {
+    width: 12%;
+    padding: 10px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px; /* Padding around the footer */
+    background-color: #161515; /* Dark background color */
+    border-top: 1px solid #1a1919; /* Top border */
+    margin-top: 20px; /* Space above the footer */
+    width: 100%; /* Full width */
+    color: white; /* Text color for better contrast */
+}
+
+footer p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+footer a {
+    color: #6a11cb; /* Links color */
+    text-decoration: none; /* Removes underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underlines on hover */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 600px) {
+    footer {
+        padding: 15px; /* Adjusts padding for smaller screens */
+    }
+
+    footer p {
+        font-size: 14px; /* Adjusts font size for smaller screens */
+    }
+
+    footer a {
+        font-size: 14px; /* Adjusts link font size for smaller screens */
+    }
+}
+
+
+
+/* Adds some basic styles for the icons */
+.social-icons {
+    margin-top: 10px;
+}
+        
+.social-icons a {
+    text-decoration: none;
+    color: #f107de; /* Changes to desired color */
+    margin: 0 10px;
+    font-size: 24px; /* Adjusts size as needed */
+    transition: transform 0.3s, color 0.3s, box-shadow 0.3s; /* Animation effect */
+}
+        
+.social-icons a:hover {
+    transform: scale(1.2) rotate(15deg); /* Scale and rotate effect on hover */
+    color: #f807f8; /* Change color on hover */
+    box-shadow: 0 4px 15px rgba(45, 1, 63, 0.3); /* Add shadow on hover */
+}
+
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
