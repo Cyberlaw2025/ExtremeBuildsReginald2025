@@ -1,10 +1,10 @@
 // Sample of user data to use for login
 const users = [
-    { username: "LAlewis", password: "wffbsm123" },
+    { username: "LAlewis", password: "wffbsm1#" },
     { username: "Aron Cockroach", password: "123crashoutking" },
-    { username: "Rojah Davasca", password: "Roja1234#" },
-    { username: "Michael Jackson", password: "passw4" },
-    { username: "Sirisha Chodavarapu", password: "passw5" },
+    { username: "Rojah Davasca", password: "Roja123#" },
+    { username: "Michael Jackson", password: "passw246" },
+    { username: "Sirisha Chodavarapu", password: "passw123" },
 ];
 
 let loginAttempts = 0; // Initializes login attempts to 0
