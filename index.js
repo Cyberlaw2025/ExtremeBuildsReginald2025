@@ -2,9 +2,9 @@
 const users = [
     { username: "LAlewis", password: "wffbsm123" },
     { username: "Aron Cockroach", password: "123crashoutking" },
-    { username: "Jennifer Dixon", password: "realtechpro2016#" },
-    { username: "user4", password: "pass4" },
-    { username: "user5", password: "pass5" },
+    { username: "Rojah Davasca", password: "Roja1234#" },
+    { username: "Michael Jackson", password: "passw4" },
+    { username: "Sirisha Chodavarapu", password: "passw5" },
 ];
 
 let loginAttempts = 0; // Initializes login attempts to 0
